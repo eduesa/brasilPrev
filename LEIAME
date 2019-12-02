@@ -1,0 +1,17 @@
+1 - para exibir as querys do hibernate no Console descomentar as seguintes linhas:
+
+#spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.format_sql=true
+
+2 - para evitar loop no build deste projeto alterar o seguinte trecho referente ao "org.jvnet.jaxb2.maven2" no pom.xml
+
+DE:
+		<goals>
+			<goal>generate</goal>
+		</goals>
+		
+PARA
+		<goals>
+			<goal>help</goal>
+		</goals>		

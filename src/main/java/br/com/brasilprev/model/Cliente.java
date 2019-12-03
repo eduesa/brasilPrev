@@ -38,18 +38,30 @@ public class Cliente {
 	@JsonInclude(value=Include.NON_NULL)
 	private String rua;
 	
+	/***
+	 * SUGESTÃO: CRIAR TABELA E SUA ENTIDADE: BR_CIDADE
+	 */
 	@Column(name="CLIE_CIDADE")
 	@JsonInclude(value=Include.NON_NULL)
 	private String cidade;
-	
+
+	/***
+	 * SUGESTÃO: CRIAR TABELA E SUA ENTIDADE: BR_BAIRRO
+	 */	
 	@Column(name="CLIE_BAIRRO")
 	@JsonInclude(value=Include.NON_NULL)
 	private String bairro;
 	
+	/***
+	 * SUGESTÃO: CRIAR TABELA E SUA ENTIDADE: BR_CEP
+	 */	
 	@Column(name="CLIE_CEP")
 	@JsonInclude(value=Include.NON_NULL)
 	private Long cep;
 	
+	/***
+	 * SUGESTÃO: CRIAR TABELA E SUA ENTIDADE: BR_ESTADO
+	 */
 	@Column(name="CLIE_ESTADO")
 	@JsonInclude(value=Include.NON_NULL)
 	private String estado;

@@ -36,8 +36,8 @@ public class PedidoItem {
 	@JsonInclude(value=Include.NON_NULL)
 	private Produto idProduto;
 	
-	/**
-	 * Avaliar necessidade desde campo, pois já existe o vinculo com a entidade Produto
+	/***
+	 * AVALIAR: necessidade desde campo, pois já existe o vinculo com a entidade Produto
 	 */
 	@Column(name="PEIT_PRODUTO")
 	@JsonInclude(value=Include.NON_NULL)
